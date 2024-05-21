@@ -1,0 +1,52 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6d6a63;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.left-eye {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    z-index: 10;
+}
+.right-eye {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    z-index: 10;
+}
+.eyes {
+    display: flex;
+}
+ellipse {
+    z-index: 1000;
+    transition: transform 0.1s;
+}
+.nose img {
+    position: fixed;
+    height: 13%;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouth img {
+    position: fixed;
+    height: 5%;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
